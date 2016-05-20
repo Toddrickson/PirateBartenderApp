@@ -77,11 +77,10 @@ def enter_bar():
     
 def main():
     while True:
-        drink_choices = enter_bar()
-        selections = make_drink(drink_choices)
-        for item in selections:
+        ingredients = enter_bar()
+        drinks = make_drink(ingredients)
+        for item in drinks:
             print item
-        
         qutting_time()
 
 if __name__ == '__main__':
